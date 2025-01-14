@@ -1,7 +1,6 @@
 let listNums = [1,8,17,2,23,3,48,51,600,71,12,8,5,9,11,10,6,250,45,34,2,16,22,18,55]
 
 
-// This implementation does not work when the lowest number is in the right place, replace the while loop with a for loop
 
 const selectionSort = (array) =>{
    
