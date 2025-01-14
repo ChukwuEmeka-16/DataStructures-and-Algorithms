@@ -1,20 +1,20 @@
-let listNums = [8,17,2,23,3,48,51,600,71,12,8,5,9,11,10,6,250,45,34,2,16,22,18,55,1]
+let listNums = [1,8,17,2,23,3,48,51,600,71,12,8,5,9,11,10,6,250,45,34,2,16,22,18,55]
 
 
-// selection sort update
+// This implementation does not work when the lowest number is in the right place, replace the while loop with a for loop
 
 const selectionSort = (array) =>{
-    let unsorted = true;``
+   
     let toBeSortedIndex = 0;
     
-    while (unsorted) {
+    for(let o = 0; o < array.length; o++) {
         let lowestNumberIndex=toBeSortedIndex;
-        unsorted = false;
+        
 
         for (let i = toBeSortedIndex; i < array.length; i++){ 
             if (array[i] < array[lowestNumberIndex]){
                 lowestNumberIndex = i;
-                unsorted = true
+                
             }
         }
 
